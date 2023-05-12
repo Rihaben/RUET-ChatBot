@@ -7,15 +7,15 @@ $db="chat";
 
 $con=mysqli_connect($host,$user,$pass,$db);
 
-if(!$con)
-{
-	print("Not Connected<br>".mysqli_error());
+//if(!$con)
+//{
+//	print("Not Connected<br>".mysqli_error());
 
-}
-else
-{
-	echo("Connected");
-}
+//}
+//else
+//{
+//	echo("Connected");
+//}
 
 
 
