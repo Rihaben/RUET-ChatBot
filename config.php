@@ -9,7 +9,7 @@ $con=mysqli_connect($host,$user,$pass,$db);
 
 if(!$con)
 {
-	print("Not Connected<br>".mysql_error());
+	print("Not Connected<br>".mysqli_error());
 
 }
 else
