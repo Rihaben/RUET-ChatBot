@@ -10,6 +10,7 @@ spec:
   - protocol: "TCP"
     port: 80
     targetPort: 80
+    nodePort: 30022
   type: NodePort
 
 ---
@@ -37,4 +38,4 @@ spec:
         image: rihabbennour/app:latest
         imagePullPolicy: Always
         ports:
-        - containerPort: 8083
+        - containerPort: 80
