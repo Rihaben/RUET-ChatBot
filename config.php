@@ -1,27 +1,20 @@
 <?php
 
-$host="127.29.12.43";
-$user="root";
-$pass="password";
-$db="chat";
+$servername = "localhost";
+$username = "root";
+$password = "password";
+$dbname = "myDB";
 
-$con=mysqli_connect($host,$user,$pass,$db);
-
-//if(!$con)
-//{
-//	print("Not Connected<br>".mysqli_error());
-
-//}
-//else
-//{
-//	echo("Connected");
-//}
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
 
 // Check connection
-if (!$con) {
-    die("Connection failed: " . mysqli_connect_error());
+if ($conn->connect_error) {
+  die("Connection failed: " . $conn->connect_error);
 }
 echo "Connected successfully";
+
+
 
 
 
